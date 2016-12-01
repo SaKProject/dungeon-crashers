@@ -1,1 +1,13 @@
+language: ruby
+rvm:
+  - 2.2
+  - jruby
+  - rbx-2
 
+travis encrypt "sak-project:RFJD39IYFwFwYEN6QoE3PVkT" --add notifications.slack
+
+notifications:
+  slack:
+    rooms:
+      - sak-project:RFJD39IYFwFwYEN6QoE3PVkT#coding
+      - sak-project:RFJD39IYFwFwYEN6QoE3PVkT#github
