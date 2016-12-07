@@ -366,17 +366,20 @@
   - ( Insert here )
   - _Insert_here_.rb
 - - 123
-  - ''
-  - blank.rb
+  - Skip Title Screen
+  - Skip_Title_Screen.rb
 - - 124
-  - ''
-  - 
+  - Screenshot
+  - Screenshot.rb
 - - 125
-  - ▼ Main Process
+  - ''
   - 
 - - 126
+  - ▼ Main Process
+  - 
+- - 127
   - Main
   - Main.rb
-- - 127
+- - 128
   - ''
   - 

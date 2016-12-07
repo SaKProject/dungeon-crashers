@@ -30,14 +30,14 @@ test_battlers:
   - 1
   - 0
 _: 7829367
-edit_map_id: 11
+edit_map_id: 2
 battle_end_me: !ruby/object:RPG::ME
   name: Victory1
   pitch: 100
   volume: 100
 party_members:
 - 1
-start_x: 9
+start_x: 21
 ship: !ruby/object:RPG::System::Vehicle
   start_y: 0
   bgm: !ruby/object:RPG::BGM {name: Ship, volume: 100, pitch: 100}
@@ -73,8 +73,8 @@ sounds:
 - !ruby/object:RPG::SE {name: Item3, pitch: 100, volume: 80}
 variables:
 - 
-- ''
-- ''
+- PlayerX
+- PlayerY
 - ''
 - ''
 - ''
@@ -174,13 +174,13 @@ variables:
 - ''
 - ''
 battle_bgm: !ruby/object:RPG::BGM {name: Battle1, volume: 100, pitch: 100}
-version_id: 18112001
-start_map_id: 11
+version_id: 52656680
+start_map_id: 2
 battler_name: Assassin
 magic_number: 77696160
 switches:
 - 
-- ''
+- PlayerCloseToMimic
 - ''
 - ''
 - ''
