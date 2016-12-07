@@ -8,6 +8,9 @@ This project is built and ran using RPG Maker VX Ace, so you'll need the [RTP Pa
 ### FAQ
 **TBA**
 
+### Credits
+**TBA**
+
 ### To-Does
 
 |To-Does| Description|
