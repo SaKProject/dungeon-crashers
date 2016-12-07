@@ -1,4 +1,4 @@
-# Dungeon Crashers [![Build Status](https://travis-ci.org/SaKProject/dungeon-crashers.svg?branch=master)](https://travis-ci.org/SaKProject/dungeon-crashers) [![Build Status](https://scrutinizer-ci.com/g/SaKProject/dungeon-crashers/badges/build.png?b=master)](https://scrutinizer-ci.com/g/SaKProject/dungeon-crashers/build-status/master)
+# Dungeon Crashers [![Build Status](https://scrutinizer-ci.com/g/SaKProject/dungeon-crashers/badges/build.png?b=master)](https://scrutinizer-ci.com/g/SaKProject/dungeon-crashers/build-status/master)
 -------------------------------
 A RPG Maker VX Ace Project
 
