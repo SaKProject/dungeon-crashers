@@ -135,6 +135,8 @@ events:
       - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['entrance block. She feels like she needs to find something in order ']}
       - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['to move it off. How will she find it?! - Mario']}
       - !ruby/object:RPG::EventCommand {i: 0, c: 222, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 243, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 242, p: [1]}
       - !ruby/object:RPG::EventCommand
         i: 0
         c: 205
@@ -187,6 +189,7 @@ events:
       - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [need an object to get pass this thing.]}
       - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['But what is it?']}
       - !ruby/object:RPG::EventCommand {i: 0, c: 211, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 244, p: []}
       - !ruby/object:RPG::EventCommand {i: 0, c: 123, p: [A, 0]}
       - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
     - !ruby/object:RPG::Event::Page
@@ -316,6 +319,30 @@ events:
       priority_type: 1
       trigger: 4
       list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [==========================================]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['The next page is littered with so many processes that it''ll get ']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['confusing to try and explain it throughout the code, so I will try and ']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [explain it in the following comment.]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [Meet Mimic --> Have Money for Business --> Store is Open]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [Meet Mimic --> Don't have Money for Business --> Gets Money]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [Gets Money --> Have Money for Business --> Store is Open]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [Meet Mimic --> Don't have Money for Business --> No Money]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [No Money --> Gets Money --> Has Money for Business]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [Has Money for Business --> Store is Open]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['The Tree above explains the situations in which the player might be ']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['faced in. Since any player has the possibility of encounter either ']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['three of them, the next page deals with these probabilities!']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['After the player pays for the business through whatever means, ']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['these probabilities vanish and she simply shows the shop every ']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [time they talk.]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['@Felli, this is my eventing comment so that you don''t get confused.']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [-Mario]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [===========================================]}
       - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
     - !ruby/object:RPG::Event::Page
       condition: !ruby/object:RPG::Event::Page::Condition
@@ -354,6 +381,268 @@ events:
       priority_type: 1
       trigger: 0
       list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 243, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 242, p: [2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 230, p: [60]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 241, p: [!ruby/object:RPG::BGM {name: Chillin Hard, volume: 100, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 111, p: [0, 2, 1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 108, p: [This is when the Mimic and Player meet for the first time.]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [Mimic, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['???: Ah! Hello there! I am a Mimic!']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [Mimic is my name!]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['How may I help you?']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [Tsubaki, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\n[1]: Ah! Hello? I thought you were']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [just a chest until you popped out. What]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['is a monster like you doing here?']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [Mimic, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['Mimic: I''m not too sure myself. This']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [plant has been occupying most of my time.]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [Tsubaki, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\n[1]: Where did you manage to find']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['the plant? I haven''t found any stores']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [nearby here.]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [Mimic, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['Mimic: I grew this myself. This chest is']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [bigger than it appears. All the things I]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [have has been home-made by yours]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [truly.]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [Tsubaki, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\n[1]: Oh? May I purchase some of your']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['wares then?']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [Mimic, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['Mimic: Hold on there. Although these are']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['homemade, they aren''t for sale. I']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [haven't even thought about placing these]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [in the market.]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [Mimic, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['Mimic: I''ll cut you a deal! If you manage']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['to find enough coin, then I''ll be able']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [to fund my small business.]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [Mimic, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['Mimic: Probably 100\G would probably']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [be enough to fund it.]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [Mimic, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['Mimic: So...\.\$\.Do you got the 100\G?']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 108, p: [Ask if she has enough money to pay for the business.]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 102, p: [['Yes', 'No'], 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [0, 'Yes']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 108, p: [Checks to see if she actually has the money in her pockets.]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 111, p: [7, 100, 2]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 108, p: [She doesn't]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [You don't have enough \G to give to the Mimic!]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: [Mimic, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: ['Mimic: Aw man! Welp, the sooner you get']}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: ['those \G, the better!']}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 411, p: []}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 108, p: [She does and a small cutscene occurs here.]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: [Mimic, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: ['Mimic: Nice! You actually got the \G!']}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: [Mimic, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: ['Mimic: Now then, let me just do some']}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [setup back here.]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 242, p: [3]}
+      - !ruby/object:RPG::EventCommand
+        i: 3
+        c: 205
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &17 !ruby/object:RPG::MoveCommand {code: 15, parameters: [60]}
+          - &18 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Open1, pitch: 100, volume: 80}]}
+          - &19 !ruby/object:RPG::MoveCommand {code: 41, parameters: ['!Chest', 1]}
+          - &20 !ruby/object:RPG::MoveCommand {code: 15, parameters: [60]}
+          - &21 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Blow1, pitch: 100, volume: 80}]}
+          - &22 !ruby/object:RPG::MoveCommand {code: 15, parameters: [30]}
+          - &23 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Blow2, pitch: 100, volume: 80}]}
+          - &24 !ruby/object:RPG::MoveCommand {code: 15, parameters: [60]}
+          - &25 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Blow7, pitch: 100, volume: 80}]}
+          - &26 !ruby/object:RPG::MoveCommand {code: 15, parameters: [20]}
+          - &27 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Blow7, pitch: 100, volume: 80}]}
+          - &28 !ruby/object:RPG::MoveCommand {code: 15, parameters: [20]}
+          - &29 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Blow7, pitch: 100, volume: 80}]}
+          - &30 !ruby/object:RPG::MoveCommand {code: 15, parameters: [20]}
+          - &31 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Monster5, pitch: 50, volume: 80}]}
+          - &32 !ruby/object:RPG::MoveCommand {code: 15, parameters: [100]}
+          - &33 !ruby/object:RPG::MoveCommand {code: 15, parameters: [120]}
+          - &34 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Twine, pitch: 100, volume: 80}]}
+          - &35 !ruby/object:RPG::MoveCommand {code: 15, parameters: [60]}
+          - &36 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Open1, pitch: 100, volume: 80}]}
+          - &37 !ruby/object:RPG::MoveCommand {code: 41, parameters: [$Mimic, 0]}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 505, p: [*17]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 505, p: [*18]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 505, p: [*19]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 505, p: [*20]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 505, p: [*21]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 505, p: [*22]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 505, p: [*23]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 505, p: [*24]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 505, p: [*25]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 505, p: [*26]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 505, p: [*27]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 505, p: [*28]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 505, p: [*29]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 505, p: [*30]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 505, p: [*31]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 505, p: [*32]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 505, p: [*33]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 505, p: [*34]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 505, p: [*35]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 505, p: [*36]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 505, p: [*37]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 230, p: [30]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 241, p: [!ruby/object:RPG::BGM {name: Chillin Hard, volume: 100, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: [Mimic, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: ['Mimic: It is done! I''ll like to']}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [congratulate you on being the first]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [customer on the grand opening!]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 125, p: [1, 0, 100]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 302, p: [0, 1, 0, 0, false]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 605, p: [0, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 605, p: [1, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 605, p: [1, 20, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 241, p: [!ruby/object:RPG::BGM {name: Chillin Hard, volume: 100, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 121, p: [3, 3, 0]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 412, p: []}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [1, 'No']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 108, p: [Replies no the question]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: [Mimic, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['Mimic: Welp, can''t start off my business']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [without it. I hope that you can find]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [them soon.]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 404, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 121, p: [2, 2, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 411, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 108, p: ['This is not their first time meeting, but checks if she paid the ']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 408, p: [money for business yet.]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 111, p: [0, 3, 1]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: [Mimic, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['Mimic: So...\.\$\.Do you got the 100\G?']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 108, p: [Ask if she has enough money to pay for the business.]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 102, p: [['Yes', 'No'], 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 402, p: [0, 'Yes']}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 108, p: [Checks to see if she actually has the money in her pockets.]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 111, p: [7, 100, 2]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 108, p: [She doesn't]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [You don't have enough \G to give to the Mimic!]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: [Mimic, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: ['Mimic: Aw man! Welp, the sooner you get']}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: ['those \G, the better!']}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 411, p: []}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 108, p: [She does and a small cutscene occurs here.]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: [Mimic, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: ['Mimic: Nice! You actually got the \G!']}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: [Mimic, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: ['Mimic: Now then, let me just do some']}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [setup back here.]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 242, p: [2]}
+      - !ruby/object:RPG::EventCommand
+        i: 4
+        c: 205
+        p:
+        - 0
+        - !ruby/object:RPG::MoveRoute
+          repeat: false
+          skippable: false
+          wait: true
+          list:
+          - &38 !ruby/object:RPG::MoveCommand {code: 15, parameters: [60]}
+          - &39 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Open1, pitch: 100, volume: 80}]}
+          - &40 !ruby/object:RPG::MoveCommand {code: 41, parameters: ['!Chest', 1]}
+          - &41 !ruby/object:RPG::MoveCommand {code: 15, parameters: [60]}
+          - &42 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Blow1, pitch: 100, volume: 80}]}
+          - &43 !ruby/object:RPG::MoveCommand {code: 15, parameters: [30]}
+          - &44 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Blow2, pitch: 100, volume: 80}]}
+          - &45 !ruby/object:RPG::MoveCommand {code: 15, parameters: [60]}
+          - &46 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Blow7, pitch: 100, volume: 80}]}
+          - &47 !ruby/object:RPG::MoveCommand {code: 15, parameters: [20]}
+          - &48 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Blow7, pitch: 100, volume: 80}]}
+          - &49 !ruby/object:RPG::MoveCommand {code: 15, parameters: [20]}
+          - &50 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Blow7, pitch: 100, volume: 80}]}
+          - &51 !ruby/object:RPG::MoveCommand {code: 15, parameters: [20]}
+          - &52 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Monster5, pitch: 50, volume: 80}]}
+          - &53 !ruby/object:RPG::MoveCommand {code: 15, parameters: [100]}
+          - &54 !ruby/object:RPG::MoveCommand {code: 15, parameters: [120]}
+          - &55 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Twine, pitch: 100, volume: 80}]}
+          - &56 !ruby/object:RPG::MoveCommand {code: 15, parameters: [60]}
+          - &57 !ruby/object:RPG::MoveCommand {code: 44, parameters: [!ruby/object:RPG::SE {name: Open1, pitch: 100, volume: 80}]}
+          - &58 !ruby/object:RPG::MoveCommand {code: 41, parameters: [$Mimic, 0]}
+          - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 505, p: [*38]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 505, p: [*39]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 505, p: [*40]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 505, p: [*41]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 505, p: [*42]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 505, p: [*43]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 505, p: [*44]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 505, p: [*45]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 505, p: [*46]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 505, p: [*47]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 505, p: [*48]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 505, p: [*49]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 505, p: [*50]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 505, p: [*51]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 505, p: [*52]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 505, p: [*53]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 505, p: [*54]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 505, p: [*55]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 505, p: [*56]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 505, p: [*57]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 505, p: [*58]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 230, p: [30]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 241, p: [!ruby/object:RPG::BGM {name: Chillin Hard, volume: 100, pitch: 100}]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 101, p: [Mimic, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: ['Mimic: It is done! I''ll like to']}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [congratulate you on being the first]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 401, p: [customer on the grand opening!]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 125, p: [1, 0, 100]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 302, p: [0, 1, 0, 0, false]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 605, p: [0, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 605, p: [1, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 605, p: [1, 20, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 121, p: [3, 3, 0]}
+      - !ruby/object:RPG::EventCommand {i: 4, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 412, p: []}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 402, p: [1, 'No']}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 108, p: [Replies no the question]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 101, p: [Mimic, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: ['Mimic: Welp, can''t start off my business']}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [without it. I hope that you can find]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 401, p: [them soon.]}
+      - !ruby/object:RPG::EventCommand {i: 3, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 404, p: []}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 411, p: []}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 108, p: ['The Store is finally set up, and the dialogue prompts up for the ']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 408, p: [shop once they meet AND pay the business.]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: [Mimic, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['Mimic: What would you like to see?']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 302, p: [0, 1, 0, 0, false]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 605, p: [0, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 605, p: [1, 2, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 605, p: [1, 20, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 412, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 412, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [Mimic, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['Mimic: Welp! See ya later!']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 242, p: [2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 244, p: []}
       - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
   5: !ruby/object:RPG::Event
     id: 5
@@ -1615,8 +1904,56 @@ events:
       - !ruby/object:RPG::EventCommand {i: 0, c: 121, p: [1, 1, 1]}
       - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: Open1, pitch: 100, volume: 80}]}
       - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  20: !ruby/object:RPG::Event
+    id: 20
+    name: EV020
+    x: 26
+    y: 7
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: $Tsubaki
+        character_index: 0
+        direction: 2
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 125, p: [0, 0, 100]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [I am a test event. I give out 100 gold each]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [dialogue! \$]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
 parallax_sx: 0
-bgm: !ruby/object:RPG::BGM {name: '', volume: 100, pitch: 100}
+bgm: !ruby/object:RPG::BGM {name: Skye Cuillin, volume: 100, pitch: 100}
 tileset_id: 2
 encounter_step: 30
 width: 100
@@ -1928,7 +2265,7 @@ data: !ruby/object:Table
   - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
 bgs: !ruby/object:RPG::BGS {name: '', volume: 80, pitch: 100}
 parallax_loop_y: false
-autoplay_bgm: false
+autoplay_bgm: true
 encounter_list:
 - !ruby/object:RPG::Map::Encounter
   troop_id: 1

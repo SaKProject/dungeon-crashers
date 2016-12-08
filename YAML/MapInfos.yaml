@@ -1,10 +1,10 @@
 ---
 2: !ruby/object:RPG::MapInfo
-  scroll_x: 728
+  scroll_x: 753
   name: DMAP001
   expanded: true
   order: 3
-  scroll_y: 314
+  scroll_y: 364
   parent_id: 0
 3: !ruby/object:RPG::MapInfo
   scroll_x: 1600
@@ -58,7 +58,7 @@
 11: !ruby/object:RPG::MapInfo
   scroll_x: 272
   name: Intro
-  expanded: false
+  expanded: true
   order: 8
   scroll_y: 208
   parent_id: 0

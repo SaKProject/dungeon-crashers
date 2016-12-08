@@ -37,7 +37,7 @@ battle_end_me: !ruby/object:RPG::ME
   volume: 100
 party_members:
 - 1
-start_x: 21
+start_x: 20
 ship: !ruby/object:RPG::System::Vehicle
   start_y: 0
   bgm: !ruby/object:RPG::BGM {name: Ship, volume: 100, pitch: 100}
@@ -174,15 +174,15 @@ variables:
 - ''
 - ''
 battle_bgm: !ruby/object:RPG::BGM {name: Battle1, volume: 100, pitch: 100}
-version_id: 52656680
+version_id: 1993346
 start_map_id: 2
 battler_name: Assassin
 magic_number: 77696160
 switches:
 - 
 - PlayerCloseToMimic
-- ''
-- ''
+- FirstTimeMeetMimic
+- PaidMimic100G
 - ''
 - ''
 - ''
