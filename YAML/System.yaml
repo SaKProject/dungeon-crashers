@@ -11,7 +11,7 @@ elements:
 - Wind
 - Holy
 - Dark
-start_y: 9
+start_y: 20
 airship: !ruby/object:RPG::System::Vehicle
   start_y: 0
   bgm: !ruby/object:RPG::BGM {name: Airship, volume: 100, pitch: 100}
@@ -37,7 +37,7 @@ battle_end_me: !ruby/object:RPG::ME
   volume: 100
 party_members:
 - 1
-start_x: 20
+start_x: 25
 ship: !ruby/object:RPG::System::Vehicle
   start_y: 0
   bgm: !ruby/object:RPG::BGM {name: Ship, volume: 100, pitch: 100}
@@ -174,7 +174,7 @@ variables:
 - ''
 - ''
 battle_bgm: !ruby/object:RPG::BGM {name: Battle1, volume: 100, pitch: 100}
-version_id: 1993346
+version_id: 68002362
 start_map_id: 2
 battler_name: Assassin
 magic_number: 77696160
@@ -183,10 +183,10 @@ switches:
 - PlayerCloseToMimic
 - FirstTimeMeetMimic
 - PaidMimic100G
-- ''
-- ''
-- ''
-- ''
+- BlueSwitch1
+- YellowSwitch1
+- RedSwitch1
+- Door1Opens
 - ''
 - ''
 - ''
