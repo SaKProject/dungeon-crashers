@@ -9,6 +9,6 @@ checks:
         code_rating: true
         duplicate_code: true
 
-    ruby:
+    ruby: 
         code_rating: true
         duplicate_code: true
