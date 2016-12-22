@@ -8,7 +8,8 @@ checks:
     python:
         code_rating: true
         duplicate_code: true
-
-    ruby: true
+        
+    ruby:
+        code_rating: true
+        dublicate_code: true
         build: true
-
