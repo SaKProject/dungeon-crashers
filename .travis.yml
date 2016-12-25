@@ -1,12 +1,9 @@
 # .travis.yml
 
 {
-  "language": "ruby",
+  "language": "ruby,binary",
   "rvm": "2.2,jruby,rbx-2",
   "group": "stable",
   "dist": "precise",
   "os": "linux"
-  
- --binary flag
- --create
 }
