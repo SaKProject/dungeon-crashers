@@ -12,12 +12,3 @@ checks:
     ruby:
         code_rating: true
         duplicate_code: true
-build:
-    tests:
-        override:
-            -
-                environment:
-                    'SCRUTINIZER_CC_FILE': 'my-coverage'
-                coverage:
-                    file: 'my-coverage'
-                    format: 'rb-cc'
