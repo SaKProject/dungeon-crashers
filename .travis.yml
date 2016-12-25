@@ -1,7 +1,7 @@
 # .travis.yml
 
 {
-  "language": "ruby",
+  "language": "ruby,rake",
   "group": "stable",
   "dist": "precise",
   "os": "linux"
