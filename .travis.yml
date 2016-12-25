@@ -6,4 +6,7 @@
   "group": "stable",
   "dist": "precise",
   "os": "linux"
+  
+ --binary flag
+ --create
 }
