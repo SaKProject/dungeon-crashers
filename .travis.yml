@@ -1,9 +1,11 @@
 # .travis.yml
 
 {
-  "language": "ruby,binary",
+  "language": "ruby",
   "rvm": "2.2,jruby,rbx-2",
   "group": "stable",
   "dist": "precise",
   "os": "linux"
+  exclude:
+  - "rvm": "binary, fuzzy"
 }
