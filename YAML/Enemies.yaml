@@ -85,12 +85,12 @@
     data_id: 1
     value: 0
   params:
-  - 300
+  - 200
   - 0
   - 15
-  - 15
+  - 999
   - 10
-  - 10
+  - 1
   - 10
   - 1
   drop_items:
@@ -222,7 +222,13 @@
   - !ruby/object:RPG::Enemy::Action
     condition_type: 0
     rating: 5
-    skill_id: 1
+    skill_id: 67
+    condition_param2: 0
+    condition_param1: 0
+  - !ruby/object:RPG::Enemy::Action
+    condition_type: 0
+    rating: 4
+    skill_id: 19
     condition_param2: 0
     condition_param1: 0
   note: ''
@@ -245,7 +251,7 @@
   - 100
   - 20
   - 20
-  - 50
+  - 7
   - 40
   - 15
   - 10

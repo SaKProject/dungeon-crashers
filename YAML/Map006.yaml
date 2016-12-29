@@ -25,7 +25,7 @@ events:
         actor_id: 1
       graphic: !ruby/object:RPG::Event::Page::Graphic
         tile_id: 0
-        character_name: Spiritual
+        character_name: $Felli
         character_index: 0
         direction: 2
         pattern: 1
@@ -45,8 +45,8 @@ events:
       priority_type: 1
       trigger: 0
       list:
-      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [DemonQueen, 1, 0, 2]}
-      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[2]\N[3]:Already finished the demo I see...']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [Felli, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['\C[7]\N[3]:Already finished the demo I see...']}
       - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
   2: !ruby/object:RPG::Event
     id: 2

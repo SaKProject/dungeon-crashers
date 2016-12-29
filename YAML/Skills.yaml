@@ -28,7 +28,7 @@
     critical: true
   success_rate: 100
   hit_type: 1
-  stype_id: 0
+  stype_id: 1
   tp_cost: 0
   required_wtype_id1: 0
   required_wtype_id2: 0
