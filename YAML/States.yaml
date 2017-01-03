@@ -690,3 +690,25 @@
   remove_by_damage: false
   remove_by_restriction: false
   description: ''
+- !ruby/object:RPG::State
+  message2: ''
+  name: Non-Playable
+  priority: 80
+  icon_index: 0
+  message1: ''
+  message4: ''
+  restriction: 1
+  release_by_damage: false
+  message3: ''
+  note: This is used when a character is not yet ready to be used to the player
+  id: 26
+  features: []
+  auto_removal_timing: 0
+  min_turns: 2
+  max_turns: 4
+  chance_by_damage: 50
+  steps_to_remove: 100
+  remove_by_walking: false
+  remove_at_battle_end: true
+  remove_by_damage: false
+  remove_by_restriction: false

@@ -1,0 +1,445 @@
+--- !ruby/object:RPG::Map
+parallax_name: ''
+height: 13
+events:
+  1: !ruby/object:RPG::Event
+    id: 1
+    name: NPCVendor
+    x: 8
+    y: 7
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [===========================================]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: ['The exchange can only occure if the player is facing towards the ']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: ['Vendor. If it''s facing left or right(or somehow down), the dialogue ']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 408, p: [does not occur. -M]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 108, p: [===========================================]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 111, p: [6, -1, 8]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [NPCVendor, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [What brings a hunter like you to these]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['woods?']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [Tsubaki, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\N[1]: I am here for a bounty towards']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [a certain creature. It does not concern]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [you.]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [NPCVendor, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['Well, if you plan on opening that door,']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [that door has not been opened for]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [centuries.]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [NPCVendor, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['If you must know, there has been a']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [legend that has passed through my family]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [for generations.]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 221, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [60]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 1, 1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [The one who brings the essence of the wind as well]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [as the essence of the fiery embers will has]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [access to the ancient door.]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 222, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 230, p: [60]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [PartyMembers, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\n[1]: Thank you for the info, ma''am.']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [PartyMembers, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\n[1]: What do you do here?']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [NPCVendor, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [I am a witch. I create potions as well]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [as prepare spells for my spellbook.]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [NPCVendor, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [The woods here have not become friendly]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [shortly before you have come.]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [NPCVendor, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [I can't gather materials as easily as]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [before. Slimes which used to be friendly]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [are now hostile.]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [NPCVendor, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['May I ask you a favor, hunter? Might you']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['bring materials for my potion making?']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [PartyMembers, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['\n[1]: Yes. Where might I gather']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['these materials?']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [NPCVendor, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [They drop naturally from hostile]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [creatures.]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [NPCVendor, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['If you bring the materials here, I can']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [give you the spoils from their creation.]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [NPCVendor, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['If you require rest, you may borrow my']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [bed.]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: ['', 0, 1, 1]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: [Resting on a bed saves the progress of the game.]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 123, p: [A, 0]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 411, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 412, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: true
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 118, p: [Main Menu]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [NPCVendor, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: ['What do you have in mind?']}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 102, p: [[Potion-Making, Monster Info, Sleep (Save), Exit], 4]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [0, Potion-Making]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 118, p: [PotionMenu]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [NPCVendor, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['Which potion shall we create?']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 102, p: [[2x Healing - 1 Chuck of Slime & 1 Worm's Husk, Back], 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [0, 2x Healing - 1 Chuck of Slime & 1 Worm's Husk]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 117, p: [1]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 119, p: [PotionMenu]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [1, Back]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 119, p: [Main Menu]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 404, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [1, Monster Info]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 221, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 118, p: [MonsterMenu]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 101, p: [NPCVendor, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 401, p: ['What do you wish to know?']}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 102, p: [[Slimes, Worms, Exit], 3]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [0, Slimes]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 1, 1]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['Slimes: They are gooey substances which']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [moves on it's own. They are not considered]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['living beings by most scholars, though they']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [do hold magic in their bodies.]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 1, 1]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['Due to Slime''s magical origins, they are highly']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [immune to magical attacks. Even a high-level fire]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['storm would simply be a poke to them. However, if you']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['repeatly smash the creature, they cease to move.']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 1, 1]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [Their bodies are greatly useful in alchemy]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['for beginner alchemists, as they not only']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['serve well as a good liquid base, but their']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [taste is also of that of a jelly candy.]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 119, p: [MonsterMenu]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [1, Worms]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 1, 1]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['Worms: These creatures are common in the material']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['world. However, the most magical of those reside in']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['heavy forests, as they have the ability to resist']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [any physical attacks.]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 1, 1]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [They can only be harm via magical attacks.]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['Especially fire-based ones, as their bodies can''t']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [handle the fire as their body are too fragile for]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [their bodies are like dirt.]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 101, p: ['', 0, 1, 1]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: ['Due to these magical worm''s husks, they are widely']}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [used in the alchemic world as ingredients to low]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [level healing potions. A highly-sought after]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 401, p: [ingredients for beginner alchemists.]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 119, p: [MonsterMenu]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 402, p: [2, Exit]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 222, p: []}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 119, p: [Main Menu]}
+      - !ruby/object:RPG::EventCommand {i: 2, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 404, p: []}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [2, Sleep (Save)]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 117, p: [9]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 402, p: [3, Exit]}
+      - !ruby/object:RPG::EventCommand {i: 1, c: 0, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 404, p: []}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  2: !ruby/object:RPG::Event
+    id: 2
+    name: EV002
+    x: 9
+    y: 6
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: $Tsubaki
+        character_index: 0
+        direction: 2
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 125, p: [0, 0, 100]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 126, p: [19, 0, 0, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 126, p: [20, 0, 0, 1]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: ['', 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [I am a debug event. I give out 100 gold each]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [dialogue! You are also given a chunk of slime]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [and worm's husk.\$]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  3: !ruby/object:RPG::Event
+    id: 3
+    name: EV003
+    x: 8
+    y: 5
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: $NPCVendor
+        character_index: 0
+        direction: 2
+        pattern: 1
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 1
+      trigger: 0
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 101, p: [NPCVendor, 0, 0, 2]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [Please talk to me from the other side of]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 401, p: [the orb.]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+  4: !ruby/object:RPG::Event
+    id: 4
+    name: EV004
+    x: 8
+    y: 8
+    pages:
+    - !ruby/object:RPG::Event::Page
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch1_valid: false
+        switch2_valid: false
+        variable_valid: false
+        self_switch_valid: false
+        item_valid: false
+        actor_valid: false
+        switch1_id: 1
+        switch2_id: 1
+        variable_id: 1
+        variable_value: 0
+        self_switch_ch: A
+        item_id: 1
+        actor_id: 1
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        tile_id: 0
+        character_name: ''
+        character_index: 0
+        direction: 2
+        pattern: 0
+      move_type: 0
+      move_speed: 3
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        wait: false
+        list:
+        - !ruby/object:RPG::MoveCommand {code: 0, parameters: []}
+      walk_anime: true
+      step_anime: false
+      direction_fix: false
+      through: false
+      priority_type: 0
+      trigger: 1
+      list:
+      - !ruby/object:RPG::EventCommand {i: 0, c: 250, p: [!ruby/object:RPG::SE {name: Move, pitch: 100, volume: 80}]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 201, p: [0, 2, 28, 7, 0, 0]}
+      - !ruby/object:RPG::EventCommand {i: 0, c: 0, p: []}
+parallax_sx: 0
+bgm: !ruby/object:RPG::BGM {name: Drums of the Deep, volume: 100, pitch: 75}
+tileset_id: 3
+encounter_step: 30
+width: 17
+data: !ruby/object:Table
+  dim: 3
+  x: 17
+  y: 13
+  z: 4
+  data:
+  - 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600
+  - 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600
+  - 0600 0600 0600 0600 0600 0600 0600 0600 1fa7 0600 0600 0600 0600 0600 0600 0600 0600
+  - 0600 0600 0600 0600 0600 0600 0600 1fa3 1fa5 1fa6 0600 0600 0600 0600 0600 0600 0600
+  - 0600 0600 0600 0600 0600 0600 1fab 1fa9 1fad 1fac 1fae 0600 0600 0600 0600 0600 0600
+  - 0600 0600 0600 0600 0600 0600 0b82 0b74 0b74 0b74 0b84 0600 0600 0600 0600 0600 0600
+  - 0600 0600 0600 0600 0600 0600 0b70 0b60 0b60 0b60 0b78 0600 0600 0600 0600 0600 0600
+  - 0600 0600 0600 0600 0600 0600 0b88 0b7c 0b6c 0b7c 0b86 0600 0600 0600 0600 0600 0600
+  - 0600 0600 0600 0600 0600 0600 0600 0600 0b8c 0600 0600 0600 0600 0600 0600 0600 0600
+  - 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600
+  - 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600
+  - 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600
+  - 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600 0600
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0c7e 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 00b0 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 00e0 0000 00b8 0000 0055 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0146 0000 006b 0000 005d 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 00da 0000 0000 0000 01a7 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+  - 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+bgs: !ruby/object:RPG::BGS {name: '', volume: 80, pitch: 100}
+parallax_loop_y: false
+autoplay_bgm: true
+encounter_list: []
+autoplay_bgs: false
+parallax_show: false
+scroll_type: 0
+parallax_loop_x: false
+disable_dashing: false
+parallax_sy: 0
+display_name: Witch's Hut
+specify_battleback: false
+note: ''
+battleback1_name: ''
+battleback2_name: ''

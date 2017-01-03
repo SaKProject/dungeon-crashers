@@ -11,7 +11,7 @@ elements:
 - Wind
 - Holy
 - Dark
-start_y: 33
+start_y: 45
 airship: !ruby/object:RPG::System::Vehicle
   start_y: 0
   bgm: !ruby/object:RPG::BGM {name: Airship, volume: 100, pitch: 100}
@@ -30,14 +30,14 @@ test_battlers:
   - 1
   - 0
 _: 7829367
-edit_map_id: 1
+edit_map_id: 2
 battle_end_me: !ruby/object:RPG::ME
   name: Victory1
   pitch: 100
   volume: 100
 party_members:
 - 1
-start_x: 16
+start_x: 18
 ship: !ruby/object:RPG::System::Vehicle
   start_y: 0
   bgm: !ruby/object:RPG::BGM {name: Ship, volume: 100, pitch: 100}
@@ -75,7 +75,7 @@ variables:
 - 
 - PlayerX
 - PlayerY
-- ''
+- CheckVariable
 - ''
 - ''
 - ''
@@ -174,7 +174,7 @@ variables:
 - ''
 - ''
 battle_bgm: !ruby/object:RPG::BGM {name: Battle1, volume: 100, pitch: 100}
-version_id: 79024798
+version_id: 87257749
 start_map_id: 2
 battler_name: Assassin
 magic_number: 77696160
@@ -189,9 +189,9 @@ switches:
 - Door1Opens
 - Door2Opens
 - AirSpiritCutscene
-- ''
-- ''
-- ''
+- PassageDoor1
+- DoorOpen3
+- TeleporterOn
 - ''
 - ''
 - ''

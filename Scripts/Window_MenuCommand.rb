@@ -37,7 +37,7 @@ class Window_MenuCommand < Window_Command
     add_main_commands
     add_formation_command
     add_original_commands
-    add_save_command
+    #add_save_command
     add_game_end_command
   end
   #--------------------------------------------------------------------------

@@ -4,10 +4,6 @@
   name: Hunter
   learnings:
   - !ruby/object:RPG::Class::Learning
-    level: 5
-    skill_id: 80
-    note: ''
-  - !ruby/object:RPG::Class::Learning
     level: 10
     skill_id: 81
     note: ''
@@ -41,10 +37,6 @@
     code: 22
     data_id: 2
     value: 0.04
-  - !ruby/object:RPG::BaseItem::Feature
-    code: 22
-    data_id: 8
-    value: 0.1
   - !ruby/object:RPG::BaseItem::Feature
     code: 51
     data_id: 1
@@ -185,7 +177,11 @@
   description: ''
 - !ruby/object:RPG::Class
   name: Huntress
-  learnings: []
+  learnings:
+  - !ruby/object:RPG::Class::Learning
+    level: 1
+    skill_id: 51
+    note: ''
   id: 2
   features:
   - !ruby/object:RPG::BaseItem::Feature
@@ -205,9 +201,13 @@
     data_id: 2
     value: 0.04
   - !ruby/object:RPG::BaseItem::Feature
+    code: 22
+    data_id: 8
+    value: 0.1
+  - !ruby/object:RPG::BaseItem::Feature
     code: 41
-    data_id: 1
-    value: 0
+    data_id: 2
+    value: 0.0
   - !ruby/object:RPG::BaseItem::Feature
     code: 51
     data_id: 1

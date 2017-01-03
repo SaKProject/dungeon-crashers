@@ -4,7 +4,7 @@
   name: Slime
   gold: 25
   battler_hue: 0
-  exp: 50
+  exp: 35
   hit: 95
   battler_name: Slime
   actions:
@@ -14,7 +14,7 @@
     skill_id: 1
     condition_param2: 0
     condition_param1: 0
-  note: ''
+  note: Slimes is resistant to magical attacks
   id: 1
   eva: 5
   features:
@@ -37,21 +37,21 @@
   params:
   - 100
   - 0
-  - 12
-  - 4
+  - 20
+  - 20
   - 8
-  - 8
+  - 150
   - 10
   - 10
   drop_items:
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    denominator: 2
+    kind: 1
+    data_id: 19
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    denominator: 3
+    kind: 1
+    data_id: 19
   - !ruby/object:RPG::Enemy::DropItem
     denominator: 1
     kind: 0
@@ -60,7 +60,7 @@
   name: Small Worm
   gold: 20
   battler_hue: 0
-  exp: 45
+  exp: 50
   battler_name: Worm Small
   actions:
   - !ruby/object:RPG::Enemy::Action
@@ -69,7 +69,7 @@
     skill_id: 1
     condition_param2: 0
     condition_param1: 0
-  note: ''
+  note: A worm is resistant to physical attacks
   id: 2
   features:
   - !ruby/object:RPG::BaseItem::Feature
@@ -87,21 +87,21 @@
   params:
   - 200
   - 0
-  - 15
-  - 999
+  - 30
+  - 150
   - 10
-  - 1
+  - 5
   - 10
   - 1
   drop_items:
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    denominator: 3
+    kind: 1
+    data_id: 20
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    denominator: 4
+    kind: 1
+    data_id: 20
   - !ruby/object:RPG::Enemy::DropItem
     denominator: 1
     kind: 0
@@ -139,10 +139,10 @@
   params:
   - 500
   - 0
-  - 20
-  - 15
+  - 22
+  - 100
   - 10
-  - 10
+  - 7
   - 10
   - 10
   drop_items:
@@ -191,8 +191,8 @@
   params:
   - 1000
   - 0
-  - 20
-  - 15
+  - 25
+  - 100
   - 10
   - 10
   - 10
@@ -439,16 +439,22 @@
   icon_index: 0
   description: ''
 - !ruby/object:RPG::Enemy
-  name: ''
+  name: Green Slime
   gold: 0
   battler_hue: 0
   exp: 0
-  battler_name: ''
+  battler_name: GreenSlime
   actions:
   - !ruby/object:RPG::Enemy::Action
     condition_type: 0
     rating: 5
     skill_id: 1
+    condition_param2: 0
+    condition_param1: 0
+  - !ruby/object:RPG::Enemy::Action
+    condition_type: 0
+    rating: 4
+    skill_id: 23
     condition_param2: 0
     condition_param1: 0
   note: ''
@@ -467,27 +473,27 @@
     data_id: 1
     value: 0
   params:
-  - 100
+  - 200
   - 0
-  - 10
-  - 10
-  - 10
-  - 10
+  - 25
+  - 20
+  - 8
+  - 200
   - 10
   - 10
   drop_items:
   - !ruby/object:RPG::Enemy::DropItem
     denominator: 1
-    kind: 0
-    data_id: 1
+    kind: 1
+    data_id: 19
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    denominator: 2
+    kind: 1
+    data_id: 19
   - !ruby/object:RPG::Enemy::DropItem
-    denominator: 1
-    kind: 0
-    data_id: 1
+    denominator: 4
+    kind: 1
+    data_id: 19
   icon_index: 0
   description: ''
 - !ruby/object:RPG::Enemy
